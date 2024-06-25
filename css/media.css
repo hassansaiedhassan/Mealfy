@@ -1,0 +1,229 @@
+
+  /*^========> Container <========*/
+  @media screen and (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container {
+      padding-inline: 15px;
+    }
+  }
+  
+  /*^========> Navbar <========*/
+  @media screen and (max-width: 1200px) {
+    nav .nav-links {
+      --inline-gap: 0px;
+      --block-gap: 15px;
+      transform: translateX(100%);
+      position: absolute;
+      z-index: 999;
+      width: 350px;
+      height: 100%;
+      background-color: #fff;
+      border-left: 2px solid #f1f1f1;
+      right: 0;
+      top: 0;
+      flex-direction: column;
+      transition: transform 400ms;
+    }
+  
+    nav .nav-links .close-icon {
+      display: block;
+      padding: 10px 15px 5px;
+    }
+  
+    nav .nav-links a:not(.active):hover::before {
+      width: 0px;
+    }
+  
+    nav .nav-links a {
+      width: 100%;
+      padding: var(--block-gap) 10px;
+    }
+  
+    nav .nav-links a::before {
+      bottom: 2px;
+    }
+  
+    nav .menu-icon {
+      display: block;
+    }
+  
+    nav .mode-group {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+  
+  /*^========>home <========*/
+  @media screen and (min-width: 1200px) and (max-width: 992px) {
+    #home {
+      min-height: 100vh;
+    }
+  }
+  
+  @media screen and (max-width: 992px) and (min-width: 400px) {
+    #home .container .caption {
+      flex-direction: column-reverse;
+    }
+    #home .container .caption > * {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .home-img {
+      order: 2;
+    }
+    .home-info {
+      order: 1;
+    }
+    #home .hom-btn {
+      --border-radius: 100vh;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    #home .caption .home-info .btn-group {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  /*^========> Chefs <========*/
+  @media screen and (max-width: 992px) and (min-width:769px) {
+    .section-parent .chef-section {
+      width: calc(calc(100% - var(--gap)) / 2);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .section-parent .chef-section{
+      width: 100%;
+    }
+  }
+  
+  /*^========> Gallery <========*/
+  @media screen and (max-width: 768px) {
+    #gallery .gallery-image {
+      height: auto;
+    
+      width: 100%;
+    }
+    #gallery .gallery-image .image{
+        width: 100%;
+    }
+    
+  }
+  
+  @media screen and (max-width: 992px) and (min-width: 769px) {
+    .gallery-image {
+      height: 1405px;
+    }
+  
+    .gallery-image .image {
+      width: calc(calc(100% - var(--gap)) / 2);
+    }
+  
+    .gallery-image .pizza {
+      order: 1;
+    }
+  
+    .gallery-image .fried {
+      order: 5;
+    }
+  
+    .gallery-image .omelette {
+      order: 4;
+    }
+  
+    .gallery-image .kofta {
+      order: 7;
+    }
+  
+    .gallery-image .burger {
+      order: 2;
+    }
+  
+    .gallery-image .steak {
+      order: 6;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) and (min-width: 993px) {
+    .gallery-image {
+      height: 755px;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .gallery-image {
+      height: 1080px;
+    }
+  }
+    /*^========> contact <========*/
+    @media screen and (max-width: 768px){
+        #contact .container .details>div{
+width:100%;
+
+        }
+form .input-group input{
+    width: 100%;
+}
+    }
+    @media screen and (max-width: px){}
+  /*^========> Footer <========*/
+  
+  @media screen and (max-width: 1200px) {
+    
+    #footer .container .about, .contact-details {
+      width: calc(calc(100% - var(--gap)) / 2);
+      order: 1;
+    }
+  
+    #footer .container .subscription {
+      width: 100%;
+      order: 2;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    footer .container .about, .contact-details, .subscription {
+      width: 100%;
+      order: 0;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    footer .sunscription-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
