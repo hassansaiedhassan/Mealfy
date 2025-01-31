@@ -10,7 +10,7 @@
     flex-wrap:wrap;
     font-family: 'Open Sans', sans-serif;
 /* font-family: 'Roboto', sans-serif; */
---gap: 0.9375rem;
+--gap: 6.9375rem;
 }
 *::before, *::after{
     padding: 0;

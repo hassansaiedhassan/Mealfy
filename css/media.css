@@ -131,20 +131,19 @@
   
   /*^========> Gallery <========*/
   @media screen and (max-width: 768px) {
-    #gallery .gallery-image {
+    .gallery-image {
       height: auto;
-    
+      flex-direction: column;
+    }
+  
+    .gallery-image .image {
       width: 100%;
     }
-    #gallery .gallery-image .image{
-        width: 100%;
-    }
-    
   }
   
   @media screen and (max-width: 992px) and (min-width: 769px) {
     .gallery-image {
-      height: 1405px;
+      height: 250px;
     }
   
     .gallery-image .image {
@@ -164,7 +163,7 @@
     }
   
     .gallery-image .kofta {
-      order: 7;
+      order: 3;
     }
   
     .gallery-image .burger {
@@ -181,7 +180,6 @@
       height: 755px;
     }
   }
-  
   @media screen and (max-width: 1400px) {
     .gallery-image {
       height: 1080px;
@@ -197,7 +195,7 @@ form .input-group input{
     width: 100%;
 }
     }
-    @media screen and (max-width: px){}
+   
   /*^========> Footer <========*/
   
   @media screen and (max-width: 1200px) {
